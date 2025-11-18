@@ -12,4 +12,4 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Sql)
 
-add_subdirectory(src)
+add_subdirectory(src bin)
