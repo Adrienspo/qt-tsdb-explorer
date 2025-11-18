@@ -1,14 +1,24 @@
 #include <QApplication>
+#include <QCommandLineParser>
 #include <QPushButton>
 
 int main(int argc, char* argv[]) {
     // Initialize the application
-    QApplication application(argc, argv);
-    QApplication::setApplicationName("TSDB Explorer");
+    const QApplication application(argc, argv);
+    QCoreApplication::setApplicationName("TSDB Explorer");
+    QCoreApplication::setApplicationVersion("0.1.0");
 
+    // Setup command-line interface
+    QCommandLineParser parser;
+    parser.setApplicationDescription("A Qt-based data acquisition, visualization, and analysis tool for time series databases, inspired by oscilloscope UX.");
+    parser.addHelpOption();      // Adds --help and -h options
+    parser.addVersionOption();   // Adds --version and -v options
+    parser.process(application); // Parse arguments and handle built-in options
+
+    // TODO: Replace this placeholder with MainWindow when ready
     QPushButton button("Hello world!", nullptr);
     button.resize(400, 200);
     button.show();
 
-    return QApplication::exec(); // Execute the event loop
+    return QCoreApplication::exec(); // Execute the event loop
 }
