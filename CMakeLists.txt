@@ -10,6 +10,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
+# Generate version header file
+configure_file("src/version.h.in" "generated/version.h" @ONLY)
+
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Sql)
 
 add_subdirectory(src bin)

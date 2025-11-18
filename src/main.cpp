@@ -2,11 +2,13 @@
 #include <QCommandLineParser>
 #include <QPushButton>
 
+#include "version.h"
+
 int main(int argc, char* argv[]) {
     // Initialize the application
     const QApplication application(argc, argv);
     QCoreApplication::setApplicationName("TSDB Explorer");
-    QCoreApplication::setApplicationVersion("0.1.0");
+    QCoreApplication::setApplicationVersion(PROJECT_VERSION);
 
     // Setup command-line interface
     QCommandLineParser parser;

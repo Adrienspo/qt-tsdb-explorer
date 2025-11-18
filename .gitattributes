@@ -16,6 +16,7 @@
 *.h     text diff=cpp
 *.h++   text diff=cpp
 *.hh    text diff=cpp
+*.h.in  text diff=cpp
 
 # Configuration files:
 CMakeLists.txt text eol=lf
