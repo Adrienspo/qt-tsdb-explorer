@@ -18,6 +18,9 @@
 *.hh    text diff=cpp
 *.h.in  text diff=cpp
 
+# Qt-specific source files:
+*.ui    text eol=lf
+
 # Configuration files:
 CMakeLists.txt text eol=lf
 .clang-* text       eol=lf

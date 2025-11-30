@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QPushButton>
 
+#include "mainwindow.h"
 #include "version.h"
 
 int main(int argc, char* argv[]) {
@@ -17,10 +17,9 @@ int main(int argc, char* argv[]) {
     parser.addVersionOption();   // Adds --version and -v options
     parser.process(application); // Parse arguments and handle built-in options
 
-    // TODO: Replace this placeholder with MainWindow when ready
-    QPushButton button("Hello world!", nullptr);
-    button.resize(400, 200);
-    button.show();
+    // Setup and show main window
+    MainWindow main_window;
+    main_window.show();
 
     return QCoreApplication::exec(); // Execute the event loop
 }
