@@ -15,7 +15,8 @@ MainWindow::~MainWindow() {
 void MainWindow::onActionNewDataSourceTriggered() {
     NewDataSourceDialog dialog(this);
     if (dialog.exec()) {
-        qInfo() << "Data source created";
+        m_data_sources.append(dialog.dataSource());
+        qInfo("Data source \"%s\" created", qUtf8Printable(dialog.dataSource().name()));
         return;
     }
     qInfo() << "Data source creation cancelled";

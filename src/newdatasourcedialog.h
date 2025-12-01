@@ -6,11 +6,15 @@
 #include <QLineEdit>
 #include <QSpinBox>
 
+#include "datasource.h"
+
 class NewDataSourceDialog final : public QDialog {
     Q_OBJECT
 
 public:
     explicit NewDataSourceDialog(QWidget* parent = nullptr);
+
+    [[nodiscard]] DataSource dataSource() const;
 
 private:
     QLineEdit* m_name_field = nullptr;

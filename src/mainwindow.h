@@ -2,6 +2,8 @@
 
 #include <QMainWindow>
 
+#include "datasource.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -20,4 +22,5 @@ private slots:
 
 private:
     Ui::MainWindow* ui;
+    QList<DataSource> m_data_sources;
 };

@@ -1,4 +1,5 @@
 qt_add_executable(qt-tsdb-explorer
+        datasource.cpp
         newdatasourcedialog.cpp
         mainwindow.ui
         mainwindow.cpp

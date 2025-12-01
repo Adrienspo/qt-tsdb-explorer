@@ -43,3 +43,7 @@ NewDataSourceDialog::NewDataSourceDialog(QWidget* parent) : QDialog(parent) {
     connect(button_box, &QDialogButtonBox::accepted, this, &QDialog::accept);
     connect(button_box, &QDialogButtonBox::rejected, this, &QDialog::reject);
 }
+
+DataSource NewDataSourceDialog::dataSource() const {
+    return {m_name_field->text(), m_hostname_field->text(), m_port_field->value(), m_username_field->text(), m_password_field->text()};
+}
