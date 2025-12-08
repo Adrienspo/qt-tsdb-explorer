@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Adrien Sporrer
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 cmake_minimum_required(VERSION 3.16)
 project(qt-tsdb-explorer VERSION 0.1.0 LANGUAGES CXX)
 

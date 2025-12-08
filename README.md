@@ -1,6 +1,8 @@
 # TSDB Explorer
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
+<!-- Copyright (c) 2025 Adrien Sporrer -->
+
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
 
 **A Qt-based data acquisition, visualization, and analysis tool for time series databases, inspired by oscilloscope UX.**
 

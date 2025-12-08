@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Adrien Sporrer
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 qt_add_executable(qt-tsdb-explorer
         datasource.cpp
         newdatasourcedialog.cpp
