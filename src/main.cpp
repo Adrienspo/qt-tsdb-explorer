@@ -5,7 +5,7 @@
 #include <QCommandLineParser>
 
 #include "mainwindow.h"
-#include "version.h"
+#include "metadata.h"
 
 int main(int argc, char* argv[]) {
     // Initialize the application
@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
     // Setup command-line interface
     QCommandLineParser parser;
-    parser.setApplicationDescription("A Qt-based data acquisition, visualization, and analysis tool for time series databases, inspired by oscilloscope UX.");
+    parser.setApplicationDescription(PROJECT_DESCRIPTION);
     parser.addHelpOption();      // Adds --help and -h options
     parser.addVersionOption();   // Adds --version and -v options
     parser.process(application); // Parse arguments and handle built-in options
