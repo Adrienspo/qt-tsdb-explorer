@@ -3,8 +3,11 @@ Language: Cpp
 BasedOnStyle: Google
 Standard: c++17
 AccessModifierOffset: -4
-ColumnLimit: 0
+AllowShortFunctionsOnASingleLine: Inline
+BreakConstructorInitializers: AfterColon
+ColumnLimit: 200
 IndentWidth: 4
+PackConstructorInitializers: CurrentLine
 PointerAlignment: Left
 SpacesBeforeTrailingComments: 1
 ...
