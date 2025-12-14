@@ -3,9 +3,7 @@
 
 #pragma once
 
-#include <QComboBox>
 #include <QDialog>
-#include <QLabel>
 #include <QLineEdit>
 #include <QSpinBox>
 
