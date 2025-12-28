@@ -11,9 +11,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->actionNewDataSource, &QAction::triggered, this, &MainWindow::onActionNewDataSourceTriggered);
 }
 
-MainWindow::~MainWindow() {
-    delete ui;
-}
+MainWindow::~MainWindow() = default;
 
 void MainWindow::onActionNewDataSourceTriggered() {
     NewDataSourceDialog dialog(this);

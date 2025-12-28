@@ -15,6 +15,7 @@ QT_END_NAMESPACE
 
 class MainWindow final : public QMainWindow {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(MainWindow)
 
 public:
     explicit MainWindow(QWidget* parent = nullptr);
@@ -24,6 +25,6 @@ private slots:
     void onActionNewDataSourceTriggered();
 
 private:
-    Ui::MainWindow* ui;
+    QScopedPointer<Ui::MainWindow> ui;
     QList<DataSource> m_data_sources;
 };
