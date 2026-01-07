@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (c) 2025 Adrien Sporrer -->
+<!-- Copyright (c) 2025-2026 Adrien Sporrer -->
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <ui version="4.0">
  <class>MainWindow</class>
@@ -36,6 +36,7 @@
      <string>New</string>
     </property>
     <addaction name="actionNewDataSource"/>
+    <addaction name="actionNewChannel"/>
    </widget>
    <addaction name="menuNew"/>
   </widget>
@@ -43,6 +44,11 @@
   <action name="actionNewDataSource">
    <property name="text">
     <string>Data Source</string>
+   </property>
+  </action>
+  <action name="actionNewChannel">
+   <property name="text">
+    <string>Channel</string>
    </property>
   </action>
  </widget>

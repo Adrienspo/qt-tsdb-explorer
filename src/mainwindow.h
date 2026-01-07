@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Adrien Sporrer
+// Copyright (c) 2025-2026 Adrien Sporrer
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 #pragma once
@@ -21,10 +21,14 @@ public:
     explicit MainWindow(QWidget* parent = nullptr);
     ~MainWindow() override;
 
+    [[nodiscard]] QList<QWeakPointer<const DataSource>> availableDataSources() const;
+
 private slots:
     void onActionNewDataSourceTriggered();
+    void onActionNewChannelTriggered();
 
 private:
     QScopedPointer<Ui::MainWindow> ui;
-    QList<DataSource> m_data_sources;
+    QList<QSharedPointer<DataSource>>
+        m_data_sources; // Note: this collection could have its own resource manager (e.g., DataSourceManager) to decouple data source lifecycle management from the UI layer.
 };
